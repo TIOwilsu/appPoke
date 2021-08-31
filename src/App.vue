@@ -7,7 +7,14 @@
     <router-view />
   </div>
 </template>
-
+<script>
+export default {
+  name: "App",
+  created() {
+    console.log(this.$api);
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
