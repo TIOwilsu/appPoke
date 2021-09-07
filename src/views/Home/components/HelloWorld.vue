@@ -34,9 +34,9 @@
         <h2 class="headline font-weight-bold mb-3">What is this?</h2>
 
         <p class="subheading font-weight-regular">
-          This is a full RESTful API linked to an extensive database detailing
-          everything about the Pokémon main game series. <br />We've covered
-          everything from Pokémon to Berry Flavors.
+          This is a full RESTful API linked to an extensive<br />
+          database detailing everything about the Pokémon main game series.
+          <br />We've covered everything from Pokémon to Berry Flavors.
         </p>
       </v-col>
 
@@ -49,11 +49,12 @@
             href="https://pokeapi.co/docs/v2"
             class="subheading"
             target="_blank"
-            >documentation</a
           >
-          on how to use this API.It takes minutes to get started.<br />
-          This API will always be publicly available and will never require any
-          extensive setup process to consume.
+            documentation
+          </a>
+          on how to use this API. <br />It takes minutes to get started.<br />
+          This API will always be publicly available <br />and will never
+          require any extensive setup process to consume.
         </p>
       </v-col>
     </v-row>

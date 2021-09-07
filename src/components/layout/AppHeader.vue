@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="primary" dark>
+  <v-app-bar class="app-header" app color="primary" dark>
     <div class="d-flex align-center">
       <v-app-bar-nav-icon
         @click.stop="toogleAside(getAside)"
@@ -26,7 +26,7 @@
 <script>
 import { mapMutations, mapGetters } from "vuex";
 export default {
-  name: "Header",
+  name: "AppHeader",
   computed: {
     ...mapGetters(["getAside"])
   },

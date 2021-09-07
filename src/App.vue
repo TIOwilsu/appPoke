@@ -3,23 +3,31 @@
     <Header />
     <Aside />
     <v-main>
+      <AppTitle v-if="!isHome" />
       <router-view />
     </v-main>
+    <AppFooter />
   </v-app>
 </template>
 
 <script>
-import Header from "@/components/layout/Header";
-import Aside from "@/components/layout/Aside";
+import AppTitle from "@/components/layout/AppTitle";
+import Header from "@/components/layout/AppHeader";
+import Aside from "@/components/layout/AppAside";
+import AppFooter from "@/components/layout/AppFooter";
+
 export default {
   name: "App",
   components: {
+    AppTitle,
     Aside,
+    AppFooter,
     Header
   },
-
-  data: () => ({
-    //
-  })
+  computed: {
+    isHome() {
+      return this.$route.name === "home";
+    }
+  }
 };
 </script>
